@@ -1,0 +1,33 @@
+{
+  "name": "cnode-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/cucumber.js -f json:./reporter/report.json && node reporter.js",
+    "test1": "./node_modules/.bin/cucumber.js -t @api",
+    "login": "./node_modules/.bin/cucumber.js -t @login -f json:./reporter/report.json && node reporter.js",
+    "register": "./node_modules/.bin/cucumber.js -t @register -f json:./reporter/report.json && node reporter.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/llzuo/Cnode-cucumber.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/llzuo/Cnode-cucumber/issues"
+  },
+  "homepage": "https://github.com/llzuo/Cnode-cucumber#readme",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "chromedriver": "^2.33.2",
+    "cucumber": "^3.0.6",
+    "got": "^8.0.1",
+    "json-mock": "^0.1.0",
+    "mkdirp": "^0.5.1",
+    "mongodb": "^2.2.33",
+    "multiple-cucumber-html-reporter": "^1.1.0",
+    "selenium-webdriver": "^3.6.0"
+  }
+}
